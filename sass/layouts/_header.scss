@@ -42,4 +42,10 @@
         font-size: 1.7em;
         text-align: center;
     }
+    &__button {
+        padding: 20px;
+        border-radius: 50px;
+        background: linear-gradient(to top left, $primary-color, $secondary-color);
+        color: white;
+    }
 }
