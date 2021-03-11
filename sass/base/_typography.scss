@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'robotoregular';
-    src: url('roboto-regular-webfont.woff2') format('woff2'),
-         url('roboto-regular-webfont.woff') format('woff');
+    src: url('polices/Roboto_regular_css/roboto-regular-webfont.woff2') format('woff2'),
+         url('polices/Roboto_regular_css/roboto-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'robotomedium';
-    src: url('roboto-medium-webfont.woff2') format('woff2'),
-         url('roboto-medium-webfont.woff') format('woff');
+    src: url('polices/Roboto_medium_css/roboto-medium-webfont.woff2') format('woff2'),
+         url('polices/Roboto_medium_css/roboto-medium-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -18,13 +18,13 @@
 
 @font-face {
     font-family: 'robotobold';
-    src: url('roboto-bold-webfont.woff2') format('woff2'),
-         url('roboto-bold-webfont.woff') format('woff');
+    src: url('./polices/Roboto_bold_css/roboto-bold-webfont.woff2') format('woff2'),
+         url('./polices/Roboto_bold_css/roboto-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 
 body h1 {
-    font-family: 'robotobold', serif ;
+    font-family: 'Roboto', serif ;
 }
