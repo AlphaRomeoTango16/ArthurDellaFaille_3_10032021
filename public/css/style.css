@@ -1,3 +1,6 @@
+body {
+  margin: unset; }
+
 @font-face {
   font-family: 'robotoregular';
   src: url("polices/Roboto_regular_css/roboto-regular-webfont.woff2") format("woff2"), url("polices/Roboto_regular_css/roboto-regular-webfont.woff") format("woff");
@@ -10,16 +13,75 @@
   font-style: normal; }
 @font-face {
   font-family: 'robotobold';
-  src: url("./polices/Roboto_bold_css/roboto-bold-webfont.woff2") format("woff2"), url("./polices/Roboto_bold_css/roboto-bold-webfont.woff") format("woff");
+  src: url("/polices/Roboto_bold_css/roboto-bold-webfont.woff2") format("woff2"), url("/polices/Roboto_bold_css/roboto-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
-body h1 {
-  font-family: "Roboto", serif; }
+h1 {
+  font-family: "robotobold", serif; }
 
-header #logo img {
-  width: 50px; }
+a {
+  text-decoration: none;
+  color: black; }
 
-#restaurants {
+.header {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .header__logo {
+    width: 50%;
+    margin: 20px 0px 10px 0px; }
+
+.localisation {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  background-color: #ebebeb; }
+  .localisation__marker {
+    padding: 10px; }
+  .localisation__line {
+    border: none;
+    background-color: #ebebeb;
+    justify-items: center; }
+
+.explorer {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #f6f6f6; }
+  .explorer h1 {
+    width: 80%;
+    font-size: 2em;
+    text-align: center; }
+  .explorer p {
+    width: 90%;
+    font-size: 1.7em;
+    text-align: center; }
+
+footer {
+  background-color: #353535; }
+
+.restaurants {
+  background-color: #f6f6f6; }
+
+.restaurants {
+  background-color: #f6f6f6; }
+
+.restaurant {
+  width: 350px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 20px; }
+  .restaurant__pic {
+    width: 100%;
+    height: 60%;
+    border-radius: 10px 10px 0px 0px;
+    object-fit: cover; }
 
 /*# sourceMappingURL=style.css.map */

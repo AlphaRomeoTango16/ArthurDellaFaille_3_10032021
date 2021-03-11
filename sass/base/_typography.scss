@@ -18,13 +18,18 @@
 
 @font-face {
     font-family: 'robotobold';
-    src: url('./polices/Roboto_bold_css/roboto-bold-webfont.woff2') format('woff2'),
-         url('./polices/Roboto_bold_css/roboto-bold-webfont.woff') format('woff');
+    src: url('/polices/Roboto_bold_css/roboto-bold-webfont.woff2') format('woff2'),
+         url('/polices/Roboto_bold_css/roboto-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 
-body h1 {
-    font-family: 'Roboto', serif ;
+h1 {
+    font-family: 'robotobold', serif ;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
