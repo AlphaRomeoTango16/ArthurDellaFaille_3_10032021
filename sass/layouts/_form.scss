@@ -58,13 +58,13 @@
         padding-right: 30px;
         &:hover{
             cursor: pointer;
-            font-size: 0;
             &::before {
                 font-family: "Font Awesome 5 Free";
                 color: $primary-color;
                 font-weight: 900;
                 content: "\f004";
-                font-size: initial;
+                font-size: 1em;
+                position: absolute;
             }
         }
     }

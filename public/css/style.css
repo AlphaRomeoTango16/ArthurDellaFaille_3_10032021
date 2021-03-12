@@ -187,14 +187,14 @@ nav ul {
     display: flex;
     padding-right: 30px; }
     .restaurant__icon:hover {
-      cursor: pointer;
-      font-size: 0; }
+      cursor: pointer; }
       .restaurant__icon:hover::before {
         font-family: "Font Awesome 5 Free";
         color: #9356DC;
         font-weight: 900;
         content: "\f004";
-        font-size: initial; }
+        font-size: 1em;
+        position: absolute; }
   .restaurant h2 {
     margin: unset;
     font-weight: bold; }
