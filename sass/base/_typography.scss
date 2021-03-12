@@ -1,40 +1,14 @@
-@font-face {
-    font-family: 'robotoregular';
-    src: url('polices/Roboto_regular_css/roboto-regular-webfont.woff2') format('woff2'),
-         url('polices/Roboto_regular_css/roboto-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'robotomedium';
-    src: url('polices/Roboto_medium_css/roboto-medium-webfont.woff2') format('woff2'),
-         url('polices/Roboto_medium_css/roboto-medium-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'robotobold';
-    src: url('/polices/Roboto_bold_css/roboto-bold-webfont.woff2') format('woff2'),
-         url('/polices/Roboto_bold_css/roboto-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
 h1 {
-    font-family: 'robotobold', arial;
+    font-family: 'Roboto', arial;
+    font-weight: bold;
 }
 
 h2 {
-    font-family: 'robotomedium', arial;
+    font-family: 'Roboto', arial;
 }
 
 p {
-    font-family: 'robotomedium', arial;
+    font-family: 'Roboto', arial;
 }
 
 a {

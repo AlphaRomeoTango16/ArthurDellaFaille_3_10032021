@@ -4,6 +4,7 @@
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
     &__list {
         width: 100%;
         display: flex;
@@ -17,6 +18,7 @@
 .restaurants {
     background-color: $bloc_color;
     margin-top: 70px;
+    padding-bottom: 30px;
     &__list {
         display: flex;
         width: 90%;
