@@ -6,6 +6,10 @@ nav ul {
         color: white;
         font-family: arial;
         margin-bottom: 10px;
+        &:hover{
+            cursor: pointer;
+            color: $primary-color;
+        }
     }
     & .ustensils {
         padding-right: 12px;

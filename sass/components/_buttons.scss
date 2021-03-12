@@ -1,29 +1,38 @@
 .button {
     width: 90%;
+    height: 30px;
     display: flex;
     background-color: $bloc_color;
     font-family: arial;
     padding: 20px 20px 20px 0px;
-    border-radius: 25px;
-    box-shadow: 0px 0px 11px 2px #D0D0D0;
+    border-radius: 20px;
+    box-shadow: 1px 3px 10px 3px #D0D0D0;
     margin-top: 20px;
     align-items: center;
+    &:hover {
+        background-color: hsla(267, 66%, 60%, 0.20);
+        cursor: pointer;
+    }
     &__number {
         width: 10px;
         height: 10px;
         padding: 10px;
         display: flex;
+        position: absolute;
+        left: 10px;
         background-color: $primary-color;
         color: white;
         border-radius: 100px;
         align-items: center;
     }
     &__icon {
-        padding-left: 15px;
+        padding-left: 35px;
         padding-right: 15px;
         color: grey;
-    }
+        position: absolute;
+        }
     &__title {
         display: flex;
+        margin: auto;
     }
 }

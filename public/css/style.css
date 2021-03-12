@@ -6,10 +6,12 @@ h1 {
   font-weight: bold; }
 
 h2 {
-  font-family: 'Roboto', arial; }
+  font-family: 'Roboto', arial;
+  font-weight: lighter; }
 
 p {
-  font-family: 'Roboto', arial; }
+  font-family: 'Roboto', arial;
+  font-weight: lighter; }
 
 a {
   text-decoration: none;
@@ -17,29 +19,37 @@ a {
 
 .button {
   width: 90%;
+  height: 30px;
   display: flex;
   background-color: #f6f6f6;
   font-family: arial;
   padding: 20px 20px 20px 0px;
-  border-radius: 25px;
-  box-shadow: 0px 0px 11px 2px #D0D0D0;
+  border-radius: 20px;
+  box-shadow: 1px 3px 10px 3px #D0D0D0;
   margin-top: 20px;
   align-items: center; }
+  .button:hover {
+    background-color: rgba(146, 86, 220, 0.2);
+    cursor: pointer; }
   .button__number {
     width: 10px;
     height: 10px;
     padding: 10px;
     display: flex;
+    position: absolute;
+    left: 10px;
     background-color: #9356DC;
     color: white;
     border-radius: 100px;
     align-items: center; }
   .button__icon {
-    padding-left: 15px;
+    padding-left: 35px;
     padding-right: 15px;
-    color: grey; }
+    color: grey;
+    position: absolute; }
   .button__title {
-    display: flex; }
+    display: flex;
+    margin: auto; }
 
 .header {
   height: 450px;
@@ -56,10 +66,13 @@ a {
   display: flex;
   flex-direction: row;
   background-color: #ebebeb;
-  justify-content: center; }
+  box-shadow: 0px 0.5px 2px 0px grey inset;
+  justify-content: center;
+  align-items: center; }
   .localisation__marker {
     padding: 10px; }
   .localisation__line {
+    height: 30px;
     border: none;
     display: flex;
     background-color: #ebebeb; }
@@ -80,7 +93,8 @@ a {
   .explorer p {
     width: 90%;
     font-size: 1.2em;
-    text-align: center; }
+    text-align: center;
+    color: grey; }
   .explorer__button {
     width: 200px;
     display: flex;
@@ -88,11 +102,13 @@ a {
     padding: 20px;
     border-radius: 50px;
     background: linear-gradient(to top left, #9356DC, #FF79DA);
+    box-shadow: 5px 5px 10px 3px #D0D0D0;
     color: white;
     font-family: arial;
     justify-content: center; }
-  .explorer__button:hover {
-    cursor: pointer; }
+    .explorer__button:hover {
+      cursor: pointer;
+      box-shadow: 2px 2px 9px 6px #b1afaf inset; }
 
 nav ul {
   list-style: none;
@@ -102,6 +118,9 @@ nav ul {
     color: white;
     font-family: arial;
     margin-bottom: 10px; }
+    nav ul li:hover {
+      cursor: pointer;
+      color: #9356DC; }
   nav ul .ustensils {
     padding-right: 12px; }
   nav ul .handshake {
