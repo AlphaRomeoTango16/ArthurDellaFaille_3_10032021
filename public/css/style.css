@@ -29,6 +29,32 @@ a {
   text-decoration: none;
   color: black; }
 
+.button {
+  width: 80%;
+  display: flex;
+  background-color: #f6f6f6;
+  font-family: arial;
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 0px 0px 11px 2px #D0D0D0;
+  margin-top: 20px;
+  align-items: center; }
+  .button__number {
+    width: 10px;
+    height: 10px;
+    padding: 10px;
+    display: flex;
+    background-color: #9356DC;
+    color: white;
+    border-radius: 100px;
+    align-items: center; }
+  .button__icon {
+    padding-left: 15px;
+    padding-right: 15px;
+    color: grey; }
+  .button__title {
+    display: flex; }
+
 .header {
   height: 500px;
   display: flex;
@@ -101,28 +127,27 @@ nav ul {
   flex-direction: column;
   margin-left: auto;
   margin-right: auto; }
-  .fonctionnement .list {
+  .fonctionnement__list {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center; }
-  .fonctionnement .button {
-    width: 70%;
-    display: flex;
-    background-color: #f6f6f6;
-    padding: 20px;
-    border-radius: 20px;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px; }
-  .fonctionnement__title {
-    text-align: center; }
 
 .restaurants {
-  background-color: #f6f6f6; }
+  background-color: #f6f6f6;
+  margin-top: 70px; }
+  .restaurants__list {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto; }
+  .restaurants h1 {
+    padding-top: 30px; }
 
 .restaurant {
-  width: 350px;
+  width: 100%;
   height: 300px;
   display: flex;
   flex-direction: column;
@@ -134,5 +159,13 @@ nav ul {
     height: 60%;
     border-radius: 10px 10px 0px 0px;
     object-fit: cover; }
+  .restaurant__icon {
+    width: 30px; }
+  .restaurant h2 {
+    margin-left: 20px;
+    margin-bottom: 5px; }
+  .restaurant p {
+    margin-left: 20px;
+    margin-top: unset; }
 
 /*# sourceMappingURL=style.css.map */

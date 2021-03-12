@@ -4,34 +4,33 @@
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-    & .list {
+    &__list {
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    }
-    & .button {
-        width: 70%;
-        display: flex;
-        background-color: $bloc_color;
-        padding: 20px;
-        border-radius: 20px;
-        align-items: center;
-        justify-content: center;
-        margin-top: 20px;
-    }
-    &__title {
-        text-align: center;
     }
 }
 
 
 .restaurants {
     background-color: $bloc_color;
+    margin-top: 70px;
+    &__list {
+        display: flex;
+        width: 90%;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    & h1 {
+        padding-top: 30px;
+    }
 }
 
 .restaurant {
-    width: 350px;
+    width: 100%;
     height: 300px;
     display: flex;
     flex-direction: column;
@@ -43,5 +42,16 @@
         height: 60%;
         border-radius: 10px 10px 0px 0px;
         object-fit: cover;
+    }
+    &__icon {
+        width: 30px;
+    }
+    & h2 {
+        margin-left: 20px;
+        margin-bottom: 5px;
+    }
+    & p {
+        margin-left: 20px;
+        margin-top: unset;
     }
 }
