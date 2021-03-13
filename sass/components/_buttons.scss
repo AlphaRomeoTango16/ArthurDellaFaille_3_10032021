@@ -9,6 +9,10 @@
     box-shadow: 1px 3px 10px 3px #D0D0D0;
     margin-top: 20px;
     align-items: center;
+    @include desktop {
+        width: 25%;
+        margin-top: unset;
+    }
     &:hover {
         background-color: hsla(267, 66%, 60%, 0.20);
         cursor: pointer;
@@ -24,15 +28,30 @@
         color: white;
         border-radius: 100px;
         align-items: center;
+        @include desktop {
+            position: unset;
+            padding: 30px;
+            width: 5px;
+            border-radius: 20px 0px 0px 20px;
+            justify-content: flex-start;
+        }
     }
     &__icon {
         padding-left: 35px;
         padding-right: 15px;
         color: grey;
         position: absolute;
+        @include desktop {
+            position: unset;
+            margin-right: 15px;
+        }
         }
     &__title {
         display: flex;
         margin: auto;
+        @include desktop {
+            font-size: 0.7em;
+            text-align: center;
+        }
     }
 }
