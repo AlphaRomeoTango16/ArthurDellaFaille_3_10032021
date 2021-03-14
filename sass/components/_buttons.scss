@@ -13,10 +13,6 @@
         width: 25%;
         margin-top: unset;
     }
-    &:hover {
-        background-color: hsla(267, 66%, 60%, 0.20);
-        cursor: pointer;
-    }
     &__number {
         width: 10px;
         height: 10px;
@@ -37,8 +33,7 @@
         }
     }
     &__icon {
-        padding-left: 35px;
-        padding-right: 15px;
+        padding-left: 25px;
         color: grey;
         position: absolute;
         @include desktop {
@@ -54,4 +49,8 @@
             text-align: center;
         }
     }
+    &:hover {
+        background-color: hsla(267, 66%, 60%, 0.20);
+        cursor: pointer;
+        }
 }

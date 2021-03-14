@@ -1,9 +1,14 @@
 body {
   margin: unset; }
-  @media (max-width: 1280px) and (min-width: 1024px) {
+  @media (max-width: 1980px) and (min-width: 1024px) {
     body {
       margin-left: 10%;
-      margin-right: 10%; } }
+      margin-right: 10%;
+      background-color: black; } }
+
+@media (max-width: 1980px) and (min-width: 1024px) {
+  #page {
+    background-color: white; } }
 
 h1 {
   font-family: 'Roboto', arial;
@@ -32,13 +37,10 @@ a {
   box-shadow: 1px 3px 10px 3px #D0D0D0;
   margin-top: 20px;
   align-items: center; }
-  @media (max-width: 1280px) and (min-width: 1024px) {
+  @media (max-width: 1980px) and (min-width: 1024px) {
     .button {
       width: 25%;
       margin-top: unset; } }
-  .button:hover {
-    background-color: rgba(146, 86, 220, 0.2);
-    cursor: pointer; }
   .button__number {
     width: 10px;
     height: 10px;
@@ -50,7 +52,7 @@ a {
     color: white;
     border-radius: 100px;
     align-items: center; }
-    @media (max-width: 1280px) and (min-width: 1024px) {
+    @media (max-width: 1980px) and (min-width: 1024px) {
       .button__number {
         position: unset;
         padding: 30px;
@@ -58,21 +60,23 @@ a {
         border-radius: 20px 0px 0px 20px;
         justify-content: flex-start; } }
   .button__icon {
-    padding-left: 35px;
-    padding-right: 15px;
+    padding-left: 25px;
     color: grey;
     position: absolute; }
-    @media (max-width: 1280px) and (min-width: 1024px) {
+    @media (max-width: 1980px) and (min-width: 1024px) {
       .button__icon {
         position: unset;
         margin-right: 15px; } }
   .button__title {
     display: flex;
     margin: auto; }
-    @media (max-width: 1280px) and (min-width: 1024px) {
+    @media (max-width: 1980px) and (min-width: 1024px) {
       .button__title {
         font-size: 0.7em;
         text-align: center; } }
+  .button:hover {
+    background-color: rgba(146, 86, 220, 0.2);
+    cursor: pointer; }
 
 .header {
   height: 450px;
@@ -84,10 +88,10 @@ a {
     flex-direction: column;
     align-items: center;
     width: 100%; }
-    @media (max-width: 1280px) and (min-width: 1024px) {
+    @media (max-width: 1980px) and (min-width: 1024px) {
       .header__top {
         height: 220px;
-        background-color: #FF79DA;
+        background-color: white;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -95,7 +99,7 @@ a {
   .header__logo {
     width: 50%;
     margin: 20px 0px 10px 0px; }
-    @media (max-width: 1280px) and (min-width: 1024px) {
+    @media (max-width: 1980px) and (min-width: 1024px) {
       .header__logo {
         padding-left: 50px; } }
 
@@ -108,29 +112,19 @@ a {
   box-shadow: 0px 0.5px 2px 0px grey inset;
   justify-content: center;
   align-items: center; }
-  @media (max-width: 1280px) and (min-width: 1024px) {
+  @media (max-width: 1980px) and (min-width: 1024px) {
     .localisation {
       width: 20%;
       height: 35px;
-      background-color: #FF79DA;
       border-radius: 15px;
       margin-right: 50px; } }
   .localisation__marker {
     padding: 10px; }
-    @media (max-width: 1280px) and (min-width: 1024px) {
-      .localisation__marker {
-        color: white; } }
   .localisation__line {
     height: 30px;
     border: none;
     display: flex;
     background-color: #ebebeb; }
-    @media (max-width: 1280px) and (min-width: 1024px) {
-      .localisation__line {
-        background-color: #FF79DA;
-        color: white; }
-        .localisation__line::placeholder {
-          color: white; } }
 
 .explorer {
   width: 100%;
@@ -139,7 +133,7 @@ a {
   flex-direction: column;
   align-items: center;
   background-color: #f6f6f6; }
-  @media (max-width: 1280px) and (min-width: 1024px) {
+  @media (max-width: 1980px) and (min-width: 1024px) {
     .explorer {
       height: 300px; } }
   .explorer h1 {
@@ -166,7 +160,7 @@ a {
     justify-content: center; }
     .explorer__button:hover {
       cursor: pointer;
-      box-shadow: 2px 2px 9px 6px #b1afaf inset; }
+      box-shadow: 2px 2px 9px 6px #9256dc inset; }
 
 nav ul {
   list-style: none;
@@ -201,7 +195,7 @@ nav ul {
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px; }
-  @media (max-width: 1280px) and (min-width: 1024px) {
+  @media (max-width: 1980px) and (min-width: 1024px) {
     .fonctionnement {
       margin-top: 10px; } }
   .fonctionnement__list {
@@ -210,7 +204,7 @@ nav ul {
     flex-direction: column;
     align-items: center;
     justify-content: center; }
-    @media (max-width: 1280px) and (min-width: 1024px) {
+    @media (max-width: 1980px) and (min-width: 1024px) {
       .fonctionnement__list {
         flex-direction: row;
         justify-content: space-around; } }
@@ -219,7 +213,7 @@ nav ul {
   background-color: #f6f6f6;
   margin-top: 70px;
   padding-bottom: 30px; }
-  @media (max-width: 1280px) and (min-width: 1024px) {
+  @media (max-width: 1980px) and (min-width: 1024px) {
     .restaurants {
       margin-top: 30px; } }
   .restaurants__bloc {
@@ -228,7 +222,7 @@ nav ul {
     flex-direction: column;
     margin-left: auto;
     margin-right: auto; }
-  @media (max-width: 1280px) and (min-width: 1024px) {
+  @media (max-width: 1980px) and (min-width: 1024px) {
     .restaurants__list {
       display: flex;
       flex-direction: row;
@@ -243,7 +237,7 @@ nav ul {
   border-radius: 10px;
   margin-bottom: 20px;
   box-shadow: 0px 0px 11px 2px #D0D0D0; }
-  @media (max-width: 1280px) and (min-width: 1024px) {
+  @media (max-width: 1980px) and (min-width: 1024px) {
     .restaurant {
       width: 170px;
       height: 260px; } }
@@ -257,7 +251,7 @@ nav ul {
     font-weight: bold;
     margin-top: 15px;
     left: 235px; }
-    @media (max-width: 1280px) and (min-width: 1024px) {
+    @media (max-width: 1980px) and (min-width: 1024px) {
       .restaurant__new {
         padding: 5px 10px 5px 10px;
         font-size: 0.7em;
@@ -274,14 +268,14 @@ nav ul {
     align-items: center;
     padding-top: 10px;
     padding-left: 15px; }
-    @media (max-width: 1280px) and (min-width: 1024px) {
+    @media (max-width: 1980px) and (min-width: 1024px) {
       .restaurant__box2 {
         padding-left: 10px; } }
   .restaurant__icon {
     font-size: 2em;
     display: flex;
     padding-right: 30px; }
-    @media (max-width: 1280px) and (min-width: 1024px) {
+    @media (max-width: 1980px) and (min-width: 1024px) {
       .restaurant__icon {
         font-size: 1em;
         padding-right: 10px; } }
@@ -297,13 +291,15 @@ nav ul {
   .restaurant h2 {
     margin: unset;
     font-weight: bold; }
-    @media (max-width: 1280px) and (min-width: 1024px) {
+    @media (max-width: 1980px) and (min-width: 1024px) {
       .restaurant h2 {
         font-size: 0.9em; } }
   .restaurant p {
     margin-top: unset; }
-    @media (max-width: 1280px) and (min-width: 1024px) {
+    @media (max-width: 1980px) and (min-width: 1024px) {
       .restaurant p {
         font-size: 0.8em; } }
+  .restaurant:hover {
+    box-shadow: 2px 2px 9px 6px #99E2D0; }
 
 /*# sourceMappingURL=style.css.map */

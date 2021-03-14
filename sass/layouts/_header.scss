@@ -10,7 +10,7 @@
         width: 100%;
         @include desktop {
             height: 220px;
-            background-color: $secondary-color;
+            background-color: white;
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -38,28 +38,17 @@
     @include desktop {
         width: 20%;
         height: 35px;
-        background-color: $secondary-color;
         border-radius: 15px;
         margin-right: 50px;
     }
     &__marker {
         padding: 10px;
-        @include desktop {
-            color: white;
-        }
     }
     &__line {
         height: 30px;
         border: none;
         display: flex;
         background-color: $search_color;
-        @include desktop {
-            background-color: $secondary-color;
-            color: white;
-            &::placeholder {
-                color: white;
-            }
-        }
     }
 }
 
@@ -99,7 +88,7 @@
         justify-content: center;
         &:hover {
             cursor: pointer;
-            box-shadow: 2px 2px 9px 6px rgb(177, 175, 175) inset;
+            box-shadow: 2px 2px 9px 6px rgb(146, 86, 220) inset;
         }
     }
 }

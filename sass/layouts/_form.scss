@@ -125,4 +125,7 @@
             font-size: 0.8em;
         }
     }
+    &:hover {
+        box-shadow: 2px 2px 9px 6px $tertiary-color;
+    }
 }

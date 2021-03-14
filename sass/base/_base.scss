@@ -3,5 +3,12 @@ body {
     @include desktop {
         margin-left: 10%;
         margin-right: 10%;
+        background-color: black;
+    }
+}
+
+#page {
+    @include desktop {
+        background-color: white;
     }
 }
