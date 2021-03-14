@@ -75,20 +75,4 @@
         text-align: center;
         color: grey;
     }
-    &__button {
-        width: 200px;
-        display: flex;
-        margin-top: 20px;
-        padding: 20px;
-        border-radius: 50px;
-        background: linear-gradient(to top left, $primary-color, $secondary-color);
-        box-shadow: 5px 5px 10px 3px #D0D0D0;
-        color: white;
-        font-family: arial;
-        justify-content: center;
-        &:hover {
-            cursor: pointer;
-            box-shadow: 2px 2px 9px 6px rgb(146, 86, 220) inset;
-        }
-    }
 }
