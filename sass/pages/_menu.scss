@@ -1,0 +1,93 @@
+.header__menu {
+    &__top {
+        height: 70px;
+        display: flex;
+        align-items: center;
+        &__return {
+            position: absolute;
+            font-size: 1.3em;
+            padding-left: 15px;
+            &:hover a {
+                cursor: pointer;
+                color: $primary-color;
+            }
+        }
+        &__logo {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+.menu {
+    &__pic {
+        position: relative;
+        object-fit: cover;
+        width: 100%;
+        height: 300px;
+        z-index: 1;
+        @include desktop {
+            height: 350px;
+            object-position: 50% 70%;
+         }
+    }
+    &__list {
+        position: relative;
+        margin-top: -50px;
+        background-color: #f6f6f6;
+        border-radius: 50px 50px 0px 0px;
+        z-index: 2;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 25px;
+        padding-bottom: 80px;
+        &__top {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            @include desktop {
+                padding-left: 20px;
+             }
+        }
+        & h1 {
+            font-family: 'Shrikhand', cursive;
+            font-weight: normal;
+            font-size: 1.7em;
+            margin-block-start: unset;
+            margin-block-end: unset;
+        }
+        & .restaurant__icon {
+            display: flex;
+            font-size: 1.5em;
+            padding-right: 15px;
+        }
+        & h2 {
+            font-size: 1.2em;
+            width: 50px;
+            color: grey;
+            border-bottom: 3px solid #99E2D0;
+            padding-bottom: 3px;
+        }
+    }
+    &__detail {
+        @include desktop {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+         }
+    }
+    &__sub {
+        padding-top: 10px;
+        padding-bottom: 5px;
+        @include desktop {
+            width: 300px;
+         }
+    }
+    & .master_button {
+        margin: unset;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+    }
+}

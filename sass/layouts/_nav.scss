@@ -1,0 +1,23 @@
+nav ul {
+    list-style: none;
+    padding-top: 10px;
+    padding-left: 0;
+    & li {
+        padding-bottom: 10px;
+    }
+        & a {
+            color: white;
+            font-family: arial;
+            margin-bottom: 10px;
+            &:hover {
+                cursor: pointer;
+                color: $primary-color;
+            }
+    }
+    & .ustensils {
+        padding-right: 12px;
+    }
+    & .handshake {
+        padding-right: 7px;
+    }
+}
