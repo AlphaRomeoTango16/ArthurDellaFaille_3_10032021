@@ -187,6 +187,7 @@ a {
   border-radius: 10px;
   margin-bottom: 10px;
   padding-left: 10px;
+  box-shadow: 0px 0px 11px 2px #D0D0D0;
   animation: fadein 2s; }
 @keyframes fadein {
   from {
@@ -202,23 +203,31 @@ a {
     justify-content: space-between;
     padding-bottom: 10px;
     width: 300px; }
+  .menu_button__text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
   .menu_button h3 {
     margin: unset;
     font-size: 0.9em;
     padding-bottom: 5px; }
   .menu_button p {
     margin: unset;
-    font-size: 0.8em; }
+    font-size: 0.8em;
+    text-overflow: ellipsis; }
   .menu_button__price {
     font-size: 0.8em;
     font-family: roboto;
     font-weight: bold;
-    padding-right: 20px; }
+    padding-right: 20px;
+    padding-left: 20px; }
   .menu_button .check {
     display: none; }
   .menu_button:hover {
     cursor: pointer;
     box-shadow: 2px 2px 5px 3px grey; }
+    .menu_button:hover .menu_button__price {
+      animation: movin 2s; }
     .menu_button:hover .check {
       display: flex;
       justify-content: flex-end;
