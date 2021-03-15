@@ -7,7 +7,7 @@
             position: absolute;
             font-size: 1.3em;
             padding-left: 15px;
-            &:hover {
+            &:hover a {
                 cursor: pointer;
                 color: $primary-color;
             }

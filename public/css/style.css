@@ -6,7 +6,7 @@
     position: absolute;
     font-size: 1.3em;
     padding-left: 15px; }
-    .header__menu__top__return:hover {
+    .header__menu__top__return:hover a {
       cursor: pointer;
       color: #9356DC; }
   .header__menu__top__logo {
@@ -329,11 +329,14 @@ nav ul {
     flex-direction: column;
     margin-left: auto;
     margin-right: auto; }
-  @media (max-width: 1980px) and (min-width: 1024px) {
-    .restaurants__list {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between; } }
+  .restaurants__list {
+    display: flex;
+    flex-direction: column; }
+    @media (max-width: 1980px) and (min-width: 1024px) {
+      .restaurants__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; } }
   .restaurants h1 {
     padding-top: 30px; }
 
