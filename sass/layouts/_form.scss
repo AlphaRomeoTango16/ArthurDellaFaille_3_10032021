@@ -58,6 +58,7 @@
     @include desktop {
         width: 200px;
         height: 260px;
+        position: relative;
     }    
     &__new {
         position: absolute;
@@ -72,7 +73,9 @@
         @include desktop {
             padding: 5px 10px 5px 10px;
             font-size: 0.7em;
-            position: absolute;
+            left: unset;
+            right: 10px;
+            margin-top: 10px;
         }
     }
     &__pic {
