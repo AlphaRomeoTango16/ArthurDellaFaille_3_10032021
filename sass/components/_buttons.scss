@@ -3,7 +3,8 @@
     height: 30px;
     display: flex;
     background-color: $bloc_color;
-    font-family: arial;
+    font-family: 'roboto';
+    font-weight: bold;
     padding: 20px 20px 20px 0px;
     border-radius: 20px;
     box-shadow: 1px 3px 10px 3px #D0D0D0;
@@ -38,6 +39,7 @@
         position: absolute;
         @include desktop {
             position: unset;
+            font-size: 1.2em;
             margin-right: 15px;
         }
         }
@@ -52,6 +54,7 @@
     &:hover {
         background-color: hsla(267, 66%, 60%, 0.20);
         cursor: pointer;
+        box-shadow: 2px 2px 5px 3px grey;
         &:hover .fas {
             color: $primary-color;
         }
@@ -86,6 +89,7 @@
     margin-bottom: 10px;
     padding-left: 10px;
     padding-bottom: 10px;
+    transition: transform (10px);
     & h3 {
         margin: unset;
         font-size: 0.9em;
@@ -100,5 +104,9 @@
         font-family: roboto;
         font-weight: bold;
         padding-right: 20px;
+    }
+    &:hover {
+        cursor: pointer;
+        box-shadow: 2px 2px 5px 3px grey;
     }
 }

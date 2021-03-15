@@ -111,7 +111,8 @@ a {
   height: 30px;
   display: flex;
   background-color: #f6f6f6;
-  font-family: arial;
+  font-family: 'roboto';
+  font-weight: bold;
   padding: 20px 20px 20px 0px;
   border-radius: 20px;
   box-shadow: 1px 3px 10px 3px #D0D0D0;
@@ -146,6 +147,7 @@ a {
     @media (max-width: 1980px) and (min-width: 1024px) {
       .button__icon {
         position: unset;
+        font-size: 1.2em;
         margin-right: 15px; } }
   .button__title {
     display: flex;
@@ -156,7 +158,8 @@ a {
         text-align: center; } }
   .button:hover {
     background-color: rgba(146, 86, 220, 0.2);
-    cursor: pointer; }
+    cursor: pointer;
+    box-shadow: 2px 2px 5px 3px grey; }
     .button:hover:hover .fas {
       color: #9356DC; }
 
@@ -185,7 +188,8 @@ a {
   border-radius: 10px;
   margin-bottom: 10px;
   padding-left: 10px;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  transition: transform 10px; }
   .menu_button h3 {
     margin: unset;
     font-size: 0.9em;
@@ -198,6 +202,9 @@ a {
     font-family: roboto;
     font-weight: bold;
     padding-right: 20px; }
+  .menu_button:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 5px 3px grey; }
 
 .header {
   height: 450px;
@@ -418,6 +425,6 @@ nav ul {
       .restaurant p {
         font-size: 0.8em; } }
   .restaurant:hover {
-    box-shadow: 2px 2px 5px 3px grey inset; }
+    box-shadow: 2px 2px 5px 3px grey; }
 
 /*# sourceMappingURL=style.css.map */
