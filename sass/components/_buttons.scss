@@ -52,6 +52,9 @@
     &:hover {
         background-color: hsla(267, 66%, 60%, 0.20);
         cursor: pointer;
+        &:hover .fas {
+            color: $primary-color;
+        }
         }
 }
 
