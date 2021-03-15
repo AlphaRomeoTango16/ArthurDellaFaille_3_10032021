@@ -274,10 +274,12 @@ nav ul {
   padding-top: 10px;
   padding-left: 0; }
   nav ul li {
+    padding-bottom: 10px; }
+  nav ul a {
     color: white;
     font-family: arial;
     margin-bottom: 10px; }
-    nav ul li:hover {
+    nav ul a:hover {
       cursor: pointer;
       color: #9356DC; }
   nav ul .ustensils {
@@ -315,6 +317,8 @@ nav ul {
       .fonctionnement__list {
         flex-direction: row;
         justify-content: space-around; } }
+  .fonctionnement h2 {
+    font-weight: bold; }
 
 .restaurants {
   background-color: #f6f6f6;
@@ -337,8 +341,9 @@ nav ul {
         display: flex;
         flex-direction: row;
         justify-content: space-between; } }
-  .restaurants h1 {
-    padding-top: 30px; }
+  .restaurants h2 {
+    padding-top: 20px;
+    font-weight: bold; }
 
 .restaurant {
   width: 100%;
@@ -401,11 +406,11 @@ nav ul {
         content: "\f004";
         font-size: 1em;
         position: absolute; }
-  .restaurant h2 {
+  .restaurant h3 {
     margin: unset;
     font-weight: bold; }
     @media (max-width: 1980px) and (min-width: 1024px) {
-      .restaurant h2 {
+      .restaurant h3 {
         font-size: 0.9em; } }
   .restaurant p {
     margin-top: unset; }
