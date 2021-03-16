@@ -204,16 +204,20 @@ a {
     padding-bottom: 10px;
     width: 300px; }
   .menu_button__text {
-    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis; }
   .menu_button h3 {
     margin: unset;
     font-size: 0.9em;
-    padding-bottom: 5px; }
+    padding-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
   .menu_button p {
     margin: unset;
     font-size: 0.8em;
+    white-space: nowrap;
+    overflow: hidden;
     text-overflow: ellipsis; }
   .menu_button__price {
     font-size: 0.8em;
@@ -239,14 +243,29 @@ a {
       color: white;
       justify-content: center;
       align-items: center;
-      animation: movin 2s; }
+      animation: movin 2s ease-in-out;
+      animation-fill-mode: both; }
 @keyframes movin {
   from {
     opacity: 0;
-    transform: translateX(20px); }
+    transform: translateX(50px); }
   to {
     opacity: 1;
     transform: translateX(0px); } }
+      .menu_button:hover .check .fas {
+        animation: rotation 1.5s ease-in-out; }
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+    .menu_button:hover .menu_button__text {
+      animation: reduce 2s ease-in-out; }
+@keyframes reduce {
+  from {
+    width: 100%; }
+  to {
+    width: 60%; } }
 .header {
   height: 450px;
   display: flex;
@@ -448,6 +467,27 @@ nav ul {
     .restaurant__icon:hover {
       cursor: pointer; }
       .restaurant__icon:hover::before {
+        font-family: "Font Awesome 5 Free";
+        color: #9356DC;
+        font-weight: 900;
+        content: "\f004";
+        font-size: 1em;
+        position: absolute;
+        animation: apparition 2s ease-in-out; }
+@keyframes apparition {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 0.25; }
+  50% {
+    opacity: 0.50; }
+  75% {
+    opacity: 0.75; }
+  100% {
+    opacity: 1; } }
+    .restaurant__icon:active {
+      cursor: pointer; }
+      .restaurant__icon:active::before {
         font-family: "Font Awesome 5 Free";
         color: #9356DC;
         font-weight: 900;
