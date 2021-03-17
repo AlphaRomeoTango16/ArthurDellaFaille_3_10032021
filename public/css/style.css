@@ -227,7 +227,6 @@ a {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    justify-content: space-between;
     width: 290px;
     white-space: nowrap;
     overflow: hidden;
@@ -251,31 +250,32 @@ a {
     overflow: hidden;
     text-overflow: ellipsis; }
   .menu_button__price {
-    position: relative;
+    display: flex;
     right: 0px;
     font-size: 0.8em;
     font-family: roboto;
     font-weight: bold;
     padding-right: 20px;
     padding-left: 20px;
-    padding-bottom: 10px; }
+    padding-bottom: 10px;
+    margin-left: auto; }
   .menu_button .check {
-    display: none; }
+    display: none;
+    justify-content: flex-end;
+    width: 40px;
+    height: 40px;
+    background-color: #99E2D0;
+    padding: 10px 10px 10px 10px;
+    border-radius: 0px 10px 10px 0px;
+    color: white;
+    justify-content: center;
+    align-items: center; }
   .menu_button:hover {
     cursor: pointer;
     box-shadow: 2px 2px 5px 3px grey; }
     .menu_button:hover .check {
       display: flex;
-      justify-content: flex-end;
-      width: 40px;
-      height: 40px;
-      background-color: #99E2D0;
-      padding: 10px 10px 10px 10px;
-      border-radius: 0px 10px 10px 0px;
-      color: white;
-      justify-content: center;
-      align-items: center;
-      animation: grow 2s;
+      animation: grow 1s;
       animation-timing-function: linear;
       animation-fill-mode: both; }
 @keyframes grow {
@@ -286,28 +286,32 @@ a {
     opacity: 1;
     transform: translateX(0px); } }
       .menu_button:hover .check .fas {
-        animation: rotation 1.5s ease-in-out; }
+        animation: rotation 1s ease-in-out; }
 @keyframes rotation {
   from {
     transform: rotate(0deg); }
   to {
     transform: rotate(360deg); } }
+    .menu_button:hover .menu_button__price {
+      animation: mov 1s;
+      animation-delay: 0s;
+      animation-fill-mode: both;
+      animation-timing-function: linear; }
+@keyframes mov {
+  from {
+    transform: translateX(30px); }
+  to {
+    transform: translateX(0px); } }
     .menu_button:hover .menu_button__text {
       animation: reduce 1s;
-      animation-delay: 2s;
+      animation-delay: 0s;
       animation-fill-mode: both;
       animation-timing-function: linear; }
 @keyframes reduce {
-  0% {
+  from {
     width: 100%; }
-  25% {
-    width: 85%; }
-  50% {
-    width: 75%; }
-  78% {
-    width: 65%; }
-  100% {
-    width: 50%; } }
+  to {
+    width: 70%; } }
 .header {
   height: 450px;
   display: flex;
