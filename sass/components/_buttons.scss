@@ -82,7 +82,6 @@
     height: 60px;
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
     background-color: white;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -104,10 +103,14 @@
         flex-direction: row;
         align-items: flex-end;
         justify-content: space-between;
-        padding-bottom: 10px;
-        width: 300px;
+        width: 290px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     &__text {
+        padding-bottom: 10px;
+        white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
     }
@@ -127,11 +130,14 @@
         text-overflow: ellipsis;
     }
     &__price {
+        position: relative;
+        right: 0px;
         font-size: 0.8em;
         font-family: roboto;
         font-weight: bold;
         padding-right: 20px;
         padding-left: 20px;
+        padding-bottom: 10px;
     }
     & .check {
         display: none;
@@ -139,13 +145,10 @@
     &:hover {
         cursor: pointer;
         box-shadow: 2px 2px 5px 3px grey;
-        & .menu_button__price {
-            animation: movin 2s;
-        }
         & .check {
             display: flex;
             justify-content: flex-end;
-            width: 50px;
+            width: 40px;
             height: 40px;
             background-color: $tertiary-color;
             padding: 10px 10px 10px 10px;
@@ -153,9 +156,9 @@
             color: white;
             justify-content: center;
             align-items: center;
-            animation: movin 2s ease-in-out;
+            animation: grow 2s ease-in-out;
             animation-fill-mode: both;
-            @keyframes movin {
+            @keyframes grow {
                 from {
                     opacity: 0;
                     transform: translateX(50px);
@@ -174,17 +177,6 @@
                     100% {
                         transform: rotate(360deg);
                     }
-                }
-            }
-        }
-        & .menu_button__text {
-            animation: reduce 2s ease-in-out;
-            @keyframes reduce {
-                from {
-                    width: 100%;
-                }
-                to {
-                    width: 60%;
                 }
             }
         }
