@@ -197,7 +197,8 @@
             color: white;
             justify-content: center;
             align-items: center;
-            animation: grow 2s ease-in-out;
+            animation: grow 2s;
+            animation-timing-function: linear;
             animation-fill-mode: both;
             @keyframes grow {
                 from {
@@ -221,14 +222,26 @@
                 }
             }
         }
-        & .menu_button__price {
-            animation: movin 2s ease-in-out;
-            @keyframes movin {
-                from {
-                    transform: translateX(50px);
+        & .menu_button__text {
+            animation: reduce 1s;
+            animation-delay: 2s;
+            animation-fill-mode: both;
+            animation-timing-function: linear;
+            @keyframes reduce {
+                0% {
+                    width: 100%;
                 }
-                to {
-                    transform: translateX(0px);
+                25% {
+                    width: 85%;
+                }
+                50% {
+                    width: 75%;
+                }
+                78% {
+                    width: 65%;
+                }
+                100% {
+                    width: 50%;
                 }
             }
         }
