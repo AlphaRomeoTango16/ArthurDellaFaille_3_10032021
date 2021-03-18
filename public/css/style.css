@@ -243,16 +243,19 @@ a {
     width: 180px;
     margin: unset;
     font-size: 0.8em;
-    transition: overflow 2s, text-overflow 2s; }
+    transition: width 2s; }
   .menu_button__price {
     position: relative;
-    right: -30px;
+    right: -60px;
     font-size: 0.8em;
     font-family: roboto;
     font-weight: bold;
     padding-bottom: 10px;
     margin-left: auto;
     transition: transform 2s; }
+    @media (max-width: 1980px) and (min-width: 1024px) {
+      .menu_button__price {
+        right: -30px; } }
   .menu_button .check {
     position: relative;
     left: 60px;
@@ -280,6 +283,7 @@ a {
     .menu_button:hover .menu_button__price {
       transform: translateX(-50px); }
     .menu_button:hover p {
+      width: 175px;
       overflow: hidden;
       text-overflow: ellipsis; }
 
