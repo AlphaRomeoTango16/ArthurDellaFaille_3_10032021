@@ -118,6 +118,35 @@
                 content: "\f004";
                 font-size: 1em;
                 position: absolute;
+                animation: apparition 2s ease-in-out;
+                    @keyframes apparition {
+                        0% {
+                            opacity: 0;
+                        }
+                        25% {
+                            opacity: 0.25;
+                        }
+                        50% {
+                            opacity: 0.50;
+                        }
+                        75% {
+                            opacity: 0.75;
+                        }
+                        100% {
+                            opacity: 1;
+                        }
+                    }
+            }
+        }
+        &:active {
+            cursor: pointer;
+            &::before {
+                font-family: "Font Awesome 5 Free";
+                color: $primary-color;
+                font-weight: 900;
+                content: "\f004";
+                font-size: 1em;
+                position: absolute;
             }
         }
     }

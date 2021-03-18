@@ -79,34 +79,139 @@
 }
 
 .menu_button {
-    height: 50px;
+    height: 60px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
     background-color: white;
     border-radius: 10px;
     margin-bottom: 10px;
     padding-left: 10px;
-    padding-bottom: 10px;
-    transition: transform (10px);
+    box-shadow: 0px 0px 11px 2px #D0D0D0;
+    &:nth-child(2) {
+        animation: fadein 1s;
+        @keyframes fadein {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+    }
+    &:nth-child(3) {
+        animation: fadein 2s;
+        @keyframes fadein {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+    }
+    &:nth-child(4) {
+        animation: fadein 3s;
+        @keyframes fadein {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+    }
+    &:nth-child(5) {
+        animation: fadein 4s;
+        @keyframes fadein {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+    }
+    &__inside {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        width: 290px;
+        overflow: hidden;
+    }
+    &__text {
+        width: 200px;
+        padding-bottom: 10px;
+        white-space: nowrap;
+        transition: transform 2s;
+    }
     & h3 {
+        width: 100px;
         margin: unset;
         font-size: 0.9em;
         padding-bottom: 5px;
     }
     & p {
+        width: 180px;
         margin: unset;
         font-size: 0.8em;
+        transition: width 2s;
     }
     &__price {
+        position: relative;
+        right: -60px;
         font-size: 0.8em;
         font-family: roboto;
         font-weight: bold;
-        padding-right: 20px;
+        padding-bottom: 10px;
+        margin-left: auto;
+        transition: transform 2s;
+        @include desktop {
+            right: -30px;
+        }
+    }
+    & .check {
+        position: relative;
+        left: 60px;
+        width: 40px;
+        height: 40px;
+        background-color: $tertiary-color;
+        padding: 10px 10px 10px 10px;
+        border-radius: 0px 10px 10px 0px;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        transition: transform 2s;
+        text-align: center;
+        & .fas {
+            position: relative;
+            top: 10px;
+            transition: transform 3s;
+        }
     }
     &:hover {
         cursor: pointer;
         box-shadow: 2px 2px 5px 3px grey;
+        & .check {
+            transform: translate(-100%);
+            & .fas {
+                transform: rotate(360deg);
+            }
+        }
+        & .menu_button__price {
+            transform: translateX(-50px);
+        }
+        & p {
+            width: 175px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
     }
 }

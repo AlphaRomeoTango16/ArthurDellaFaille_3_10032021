@@ -4,10 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "NODE_PATH=/usr/local/lib/node_modules/npm/",
     "sass": "sass --watch ./sass/main.scss:./public/css/style.css",
     "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
   },
   "author": "",
   "license": "ISC",
-  "browserslist": "last 4 versions"
+  "browserslist": "last 4 versions",
+  "devDependencies": {
+    "postcss-cli": "^8.3.1"
+  }
 }
