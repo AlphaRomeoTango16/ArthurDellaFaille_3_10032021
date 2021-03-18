@@ -144,41 +144,35 @@
         flex-direction: row;
         align-items: flex-end;
         width: 290px;
-        white-space: nowrap;
         overflow: hidden;
-        text-overflow: ellipsis;
     }
     &__text {
+        width: 200px;
         padding-bottom: 10px;
         white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        transition: transform 2s;
     }
     & h3 {
+        width: 100px;
         margin: unset;
         font-size: 0.9em;
         padding-bottom: 5px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
     }
     & p {
+        width: 180px;
         margin: unset;
         font-size: 0.8em;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        transition: overflow 2s, text-overflow 2s;
     }
     &__price {
-        display: flex;
-        right: 0px;
+        position: relative;
+        right: -30px;
         font-size: 0.8em;
         font-family: roboto;
         font-weight: bold;
-        padding-right: 20px;
-        padding-left: 20px;
         padding-bottom: 10px;
         margin-left: auto;
+        transition: transform 2s;
     }
     & .check {
         position: relative;
@@ -192,70 +186,28 @@
         justify-content: center;
         align-items: center;
         transition: transform 2s;
+        text-align: center;
+        & .fas {
+            position: relative;
+            top: 10px;
+            transition: transform 3s;
+        }
     }
     &:hover {
         cursor: pointer;
         box-shadow: 2px 2px 5px 3px grey;
         & .check {
             transform: translate(-100%);
-            /*
-            animation: grow 1s;
-            animation-timing-function: linear;
-            animation-fill-mode: both;
-            @keyframes grow {
-                from {
-                    opacity: 0;
-                    transform: translateX(50px);
-                }
-                to {
-                    opacity: 1;
-                    transform: translateX(0px);
-                }
-            }
-            */
-            /*
             & .fas {
-                animation: rotation 1s ease-in-out;
-                @keyframes rotation {
-                    from {
-                        transform: rotate(0deg);
-                    }
-                    to {
-                        transform: rotate(360deg);
-                    }
-                }
+                transform: rotate(360deg);
             }
-            */
         }
         & .menu_button__price {
-            animation: mov 1s;
-            animation-delay: 0s;
-            animation-fill-mode: both;
-            animation-timing-function: linear;
-            @keyframes mov {
-                from {
-                    transform: translateX(30px);
-                }
-                to {
-                    transform: translateX(0px);
-                }
-            }
+            transform: translateX(-50px);
         }
-        & .menu_button__text {
-            /*
-            animation: reduce 1s;
-            animation-delay: 0s;
-            animation-fill-mode: both;
-            animation-timing-function: linear;
-            @keyframes reduce {
-                from {
-                    width: 100%;
-                }
-                to {
-                    width: 70%;
-                }
-            }
-                    */
+        & p {
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
     }
 }
