@@ -260,8 +260,8 @@ a {
     padding-bottom: 10px;
     margin-left: auto; }
   .menu_button .check {
-    display: none;
-    justify-content: flex-end;
+    position: relative;
+    left: 60px;
     width: 40px;
     height: 40px;
     background-color: #99E2D0;
@@ -269,29 +269,41 @@ a {
     border-radius: 0px 10px 10px 0px;
     color: white;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    transition: transform 2s; }
   .menu_button:hover {
     cursor: pointer;
     box-shadow: 2px 2px 5px 3px grey; }
     .menu_button:hover .check {
-      display: flex;
+      transform: translate(-100%);
+      /*
       animation: grow 1s;
       animation-timing-function: linear;
-      animation-fill-mode: both; }
-@keyframes grow {
-  from {
-    opacity: 0;
-    transform: translateX(50px); }
-  to {
-    opacity: 1;
-    transform: translateX(0px); } }
-      .menu_button:hover .check .fas {
-        animation: rotation 1s ease-in-out; }
-@keyframes rotation {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }
+      animation-fill-mode: both;
+      @keyframes grow {
+          from {
+              opacity: 0;
+              transform: translateX(50px);
+          }
+          to {
+              opacity: 1;
+              transform: translateX(0px);
+          }
+      }
+      */
+      /*
+      & .fas {
+          animation: rotation 1s ease-in-out;
+          @keyframes rotation {
+              from {
+                  transform: rotate(0deg);
+              }
+              to {
+                  transform: rotate(360deg);
+              }
+          }
+      }
+      */ }
     .menu_button:hover .menu_button__price {
       animation: mov 1s;
       animation-delay: 0s;
@@ -303,15 +315,21 @@ a {
   to {
     transform: translateX(0px); } }
     .menu_button:hover .menu_button__text {
+      /*
       animation: reduce 1s;
       animation-delay: 0s;
       animation-fill-mode: both;
-      animation-timing-function: linear; }
-@keyframes reduce {
-  from {
-    width: 100%; }
-  to {
-    width: 70%; } }
+      animation-timing-function: linear;
+      @keyframes reduce {
+          from {
+              width: 100%;
+          }
+          to {
+              width: 70%;
+          }
+      }
+              */ }
+
 .header {
   height: 450px;
   display: flex;
