@@ -180,6 +180,7 @@ a {
 
 .menu_button {
   height: 60px;
+  width: 310px;
   display: flex;
   flex-direction: row;
   background-color: white;
@@ -187,6 +188,9 @@ a {
   margin-bottom: 10px;
   padding-left: 10px;
   box-shadow: 0px 0px 11px 2px #D0D0D0; }
+  @media (max-width: 1980px) and (min-width: 1024px) {
+    .menu_button {
+      width: 290px; } }
   .menu_button:nth-child(2) {
     animation: fadein 1s; }
 @keyframes fadein {
@@ -227,7 +231,7 @@ a {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    width: 290px;
+    width: 100%;
     overflow: hidden; }
   .menu_button__text {
     width: 200px;
@@ -246,16 +250,18 @@ a {
     transition: width 2s; }
   .menu_button__price {
     position: relative;
-    right: -60px;
+    right: -50px;
     font-size: 0.8em;
     font-family: roboto;
     font-weight: bold;
     padding-bottom: 10px;
     margin-left: auto;
+    margin-right: 20px;
     transition: transform 2s; }
     @media (max-width: 1980px) and (min-width: 1024px) {
       .menu_button__price {
-        right: -30px; } }
+        right: -30px;
+        margin-right: unset; } }
   .menu_button .check {
     position: relative;
     left: 60px;
