@@ -154,7 +154,6 @@
         width: 200px;
         padding-bottom: 10px;
         white-space: nowrap;
-        transition: transform 2s;
     }
     & h3 {
         width: 100px;
@@ -163,10 +162,14 @@
         padding-bottom: 5px;
     }
     & p {
-        width: 180px;
+        display: block;
+        width: 300px;
         margin: unset;
         font-size: 0.8em;
-        transition: width 2s;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        transition: width ease-in-out 1s;
     }
     &__price {
         position: relative;
@@ -216,8 +219,6 @@
         }
         & p {
             width: 175px;
-            overflow: hidden;
-            text-overflow: ellipsis;
         }
     }
 }

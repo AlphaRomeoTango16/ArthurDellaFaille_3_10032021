@@ -236,18 +236,21 @@ a {
   .menu_button__text {
     width: 200px;
     padding-bottom: 10px;
-    white-space: nowrap;
-    transition: transform 2s; }
+    white-space: nowrap; }
   .menu_button h3 {
     width: 100px;
     margin: unset;
     font-size: 0.9em;
     padding-bottom: 5px; }
   .menu_button p {
-    width: 180px;
+    display: block;
+    width: 300px;
     margin: unset;
     font-size: 0.8em;
-    transition: width 2s; }
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: width ease-in-out 1s; }
   .menu_button__price {
     position: relative;
     right: -50px;
@@ -289,9 +292,7 @@ a {
     .menu_button:hover .menu_button__price {
       transform: translateX(-50px); }
     .menu_button:hover p {
-      width: 175px;
-      overflow: hidden;
-      text-overflow: ellipsis; }
+      width: 175px; }
 
 .header {
   height: 450px;
