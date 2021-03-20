@@ -14,6 +14,11 @@
         width: 25%;
         margin-top: unset;
     }
+    @include tablet {
+        width: 25%;
+        height: 15px;
+        margin-top: unset;
+    }
     &__number {
         width: 10px;
         height: 10px;
@@ -32,6 +37,14 @@
             border-radius: 20px 0px 0px 20px;
             justify-content: flex-start;
         }
+        @include tablet {
+            position: unset;
+            padding: 30px;
+            width: 5px;
+            height: 0px;
+            border-radius: 20px 0px 0px 20px;
+            justify-content: flex-start;
+        }
     }
     &__icon {
         padding-left: 25px;
@@ -42,12 +55,22 @@
             font-size: 1.2em;
             margin-right: 15px;
         }
+        @include tablet {
+            position: unset;
+            font-size: 1em;
+            margin-right: 15px;
+            padding-left: 15px;
+        }
         }
     &__title {
         display: flex;
         margin: auto;
         @include desktop {
             font-size: 0.7em;
+            text-align: center;
+        }
+        @include tablet {
+            font-size: 0.6em;
             text-align: center;
         }
     }
@@ -90,6 +113,9 @@
     box-shadow: 0px 0px 11px 2px #D0D0D0;
     @include desktop {
         width: 290px;
+    }
+    @include tablet {
+        width: 220px;
     }
     &:nth-child(2) {
         animation: fadein 1s;
@@ -154,12 +180,23 @@
         width: 200px;
         padding-bottom: 10px;
         white-space: nowrap;
+        @include tablet {
+            width: 130px;
+        }
     }
     & h3 {
         width: 100px;
         margin: unset;
         font-size: 0.9em;
         padding-bottom: 5px;
+        @include tablet {
+            width: 200px;
+            font-size: 0.8em;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            transition: width ease-in-out 1s;
+        }
     }
     & p {
         display: block;
@@ -170,6 +207,11 @@
         overflow: hidden;
         text-overflow: ellipsis;
         transition: width ease-in-out 1s;
+        transition-delay: cubic-bezier(0,.94,.11,.99);
+        @include tablet {
+            width: 200px;
+            font-size: 0.7em;
+        }
     }
     &__price {
         position: relative;
@@ -184,6 +226,10 @@
         @include desktop {
             right: -30px;
             margin-right: unset;
+        }
+        @include tablet {
+            margin-right: 0px;
+            font-size: 0.7em;
         }
     }
     & .check {
@@ -216,9 +262,21 @@
         }
         & .menu_button__price {
             transform: translateX(-50px);
+            @include tablet {
+                transform: translateX(-60px);
+            }
         }
+        & h3 {
+            @include tablet {
+                width: 130px;
+            }
+        }
+
         & p {
             width: 175px;
+            @include tablet {
+                width: 130px;
+            }
         }
     }
 }

@@ -8,6 +8,9 @@
     @include desktop {
         margin-top: 10px;
     }
+    @include tablet {
+        margin-top: 10px;
+    }
     &__list {
         width: 100%;
         display: flex;
@@ -18,9 +21,16 @@
             flex-direction: row;
             justify-content: space-around;
         }
+        @include tablet {
+            flex-direction: row;
+            justify-content: space-around;
+        }
     }
     & h2 {
         font-weight: bold;
+        @include tablet {
+            margin-block-start: 10px;
+        }
     }
 }
 
@@ -31,6 +41,9 @@
     padding-bottom: 30px;
     @include desktop {
         margin-top: 30px;
+    }
+    @include tablet {
+        margin-top: 20px;
     }
     &__bloc {
         display: flex;
@@ -47,10 +60,18 @@
             flex-direction: row;
             justify-content: space-between;
         }
+        @include tablet {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
     }
     & h2 {
         padding-top: 20px;
         font-weight: bold;
+        @include tablet {
+            padding-top: 0px;
+        }
     }
 }
 
@@ -65,7 +86,12 @@
         width: 200px;
         height: 260px;
         position: relative;
-    }    
+    }
+    @include tablet {
+        width: 160px;
+        height: 200px;
+        position: relative;
+    }       
     &__new {
         position: absolute;
         padding: 10px 20px 10px 20px;
@@ -77,6 +103,13 @@
         margin-top: 15px;
         left: 235px;
         @include desktop {
+            padding: 5px 10px 5px 10px;
+            font-size: 0.7em;
+            left: unset;
+            right: 10px;
+            margin-top: 10px;
+        }
+        @include tablet {
             padding: 5px 10px 5px 10px;
             font-size: 0.7em;
             left: unset;

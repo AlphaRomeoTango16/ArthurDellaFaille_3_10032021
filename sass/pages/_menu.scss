@@ -30,6 +30,10 @@
             height: 350px;
             object-position: 50% 70%;
          }
+         @include tablet {
+            height: 350px;
+            object-position: 50% 70%;
+         }
     }
     &__list {
         position: relative;
@@ -72,6 +76,11 @@
     }
     &__detail {
         @include desktop {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+         }
+         @include tablet {
             display: flex;
             flex-direction: row;
             justify-content: space-around;

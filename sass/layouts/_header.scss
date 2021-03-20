@@ -3,6 +3,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include tablet {
+        height: 400px;
+    }
     &__top {
         display: flex;
         flex-direction: column;
@@ -16,6 +19,9 @@
             align-items: center;
             justify-content: space-between;
         }
+        @include tablet {
+            height: 150px;
+        }   
     }
     &__logo {
         width: 50%;
@@ -23,6 +29,9 @@
         @include desktop {
             padding-left: 50px;
         }
+        @include tablet {
+            margin-bottom: 30px;
+        }   
         }
 }
 
@@ -41,6 +50,9 @@
         border-radius: 15px;
         margin-right: 50px;
     }
+    @include tablet {
+        height: 35px;
+    }   
     &__marker {
         padding: 10px;
     }
@@ -60,7 +72,10 @@
     align-items: center;
     background-color: $bloc_color;
     @include desktop {
-        height: 300px;
+        height: 320px;
+    }
+    @include tablet {
+        height: 250px;
     }
     & h1 {
         width: 80%;
@@ -68,6 +83,9 @@
         text-align: center;
         margin-top: 50px;
         margin-bottom: 0px;
+        @include tablet {
+            margin-top: 30px;
+        } 
     }
     & p {
         width: 90%;
