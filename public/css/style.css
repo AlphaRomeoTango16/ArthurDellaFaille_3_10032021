@@ -87,13 +87,14 @@ body {
   margin: unset; }
   @media (max-width: 1980px) and (min-width: 1024px) {
     body {
-      margin-left: 10%;
-      margin-right: 10%;
       background-color: black; } }
 
-@media (max-width: 1980px) and (min-width: 1024px) {
-  #page {
-    background-color: white; } }
+#page {
+  margin-left: 10%;
+  margin-right: 10%; }
+  @media (max-width: 1980px) and (min-width: 1024px) {
+    #page {
+      background-color: white; } }
 
 h1 {
   font-family: 'Roboto', arial;
@@ -358,6 +359,40 @@ a {
         .menu_button:hover p {
           width: 130px; } }
 
+.loading {
+  display: block;
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top left, #9356DC, #FF79DA);
+  /*
+  animation: disappear 2s linear forwards;
+  @keyframes disappear {
+      0% {
+          opacity: 1;
+      }
+      100% {
+          opacity: 0;
+      }
+  }
+  */ }
+  .loading__spinner {
+    height: 100%; }
+    .loading__spinner .fas {
+      position: sticky;
+      left: 46%;
+      top: 46%;
+      font-size: 7em;
+      color: white;
+      animation: spin 2s linear infinite; }
+@keyframes spin {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg); }
+  100% {
+    opacity: 0;
+    transform: rotate(360deg); } }
 .header {
   height: 450px;
   display: flex;
