@@ -1,6 +1,6 @@
 .loading {
     width:100%;
-    height: 100%;
+    height: 303%;
     position: absolute;
     z-index: 1;
     background: linear-gradient(to top left, $primary-color, $secondary-color);
@@ -14,7 +14,7 @@
                 }
             }
             @include desktop {
-                height: 100%;
+                height: 139%;
             }
             @include tablet {
                 height: 100%;
