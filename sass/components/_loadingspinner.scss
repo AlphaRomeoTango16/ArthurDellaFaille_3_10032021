@@ -1,6 +1,6 @@
 .loading {
     width:100%;
-    height: 310vh;
+    height: 100%;
     position: absolute;
     z-index: 1;
     background: linear-gradient(to top left, $primary-color, $secondary-color);
@@ -14,7 +14,10 @@
                 }
             }
             @include desktop {
-                height: 178vh;
+                height: 100%;
+            }
+            @include tablet {
+                height: 100%;
             }
     &__spinner {
         & .fas {
@@ -38,6 +41,11 @@
                 left: 46%;
                 top: 46%;
                 font-size: 7em;
+            }
+            @include tablet {
+                left: 46%;
+                top: 46%;
+                font-size: 5em;
             }
         }
     }

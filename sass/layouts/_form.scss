@@ -88,8 +88,8 @@
         position: relative;
     }
     @include tablet {
-        width: 160px;
-        height: 200px;
+        width: 150px;
+        height: 250px;
         position: relative;
     }       
     &__new {
@@ -133,6 +133,10 @@
         @include desktop {
             padding-left: 10px;
         }
+        @include tablet {
+            padding-top: 10px;
+            padding-left: 10px;
+        }
     }
     &__icon {
         font-size: 2em;
@@ -140,6 +144,10 @@
         padding-right: 30px;
         @include desktop {
             font-size: 1em;
+            padding-right: 10px;
+        }
+        @include tablet {
+            font-size: 0.8em;
             padding-right: 10px;
         }
         &:hover{
@@ -189,11 +197,17 @@
         @include desktop {
             font-size: 0.9em;
         }
+        @include tablet {
+            font-size: 0.8em;
+        }
     }
     & p {
         margin-top: unset;
         @include desktop {
             font-size: 0.8em;
+        }
+        @include tablet {
+            font-size: 0.7em;
         }
     }
     &:hover {

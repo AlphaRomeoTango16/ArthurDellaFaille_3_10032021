@@ -16,6 +16,11 @@ body {
         margin-left: 10%;
         margin-right: 10%;
     }
+    @include tablet {
+        background-color: white;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
     animation: appear 2s linear backwards;
             @keyframes appear {
                 0% {
