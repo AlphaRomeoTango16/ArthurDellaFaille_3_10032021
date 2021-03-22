@@ -1,6 +1,6 @@
 .loading {
     width:100%;
-    height: 178vh;
+    height: 310vh;
     position: absolute;
     z-index: 1;
     background: linear-gradient(to top left, $primary-color, $secondary-color);
@@ -13,12 +13,15 @@
                     opacity: 0;
                 }
             }
+            @include desktop {
+                height: 178vh;
+            }
     &__spinner {
         & .fas {
             position: sticky;
-            left: 46%;
-            top: 46%;
-            font-size: 7em;
+            left: 43%;
+            top: 39%;
+            font-size: 3em;
             color: white;
             animation: spin 2s linear infinite;
             @keyframes spin {
@@ -30,6 +33,11 @@
                     opacity: 0;
                     transform: rotate(360deg);
                 }
+            }
+            @include desktop {
+                left: 46%;
+                top: 46%;
+                font-size: 7em;
             }
         }
     }

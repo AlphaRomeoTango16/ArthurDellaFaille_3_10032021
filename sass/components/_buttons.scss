@@ -5,7 +5,7 @@
     background-color: $bloc_color;
     font-family: 'roboto';
     font-weight: bold;
-    padding: 20px 20px 20px 0px;
+    padding: 20px 0px 20px 0px;
     border-radius: 20px;
     box-shadow: 1px 3px 10px 3px #D0D0D0;
     margin-top: 20px;
@@ -47,7 +47,7 @@
         }
     }
     &__icon {
-        padding-left: 25px;
+        padding-left: 30px;
         color: grey;
         position: absolute;
         @include desktop {
@@ -98,6 +98,7 @@
     &:hover {
         cursor: pointer;
         box-shadow: 2px 2px 9px 6px rgb(146, 86, 220) inset;
+        background-color: lighten($color: black, $amount: 10);
     }
 }
 
@@ -206,8 +207,7 @@
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        transition: width ease-in-out 1s;
-        transition-delay: cubic-bezier(0,.94,.11,.99);
+        transition: width cubic-bezier(.20,.30,.40,.50) 1s;
         @include tablet {
             width: 200px;
             font-size: 0.7em;
@@ -224,7 +224,7 @@
         margin-right: 20px;
         transition: transform 2s;
         @include desktop {
-            right: -30px;
+            right: -50px;
             margin-right: unset;
         }
         @include tablet {
@@ -264,6 +264,9 @@
             transform: translateX(-50px);
             @include tablet {
                 transform: translateX(-60px);
+            }
+            @include desktop {
+                transform: translateX(-65px);
             }
         }
         & h3 {
