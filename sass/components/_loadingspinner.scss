@@ -1,23 +1,19 @@
 .loading {
-    display: block;
-    position: absolute;
-    z-index: 3;
     width:100%;
-    height: 100%;
+    height: 178vh;
+    position: absolute;
+    z-index: 1;
     background: linear-gradient(to top left, $primary-color, $secondary-color);
-    /*
     animation: disappear 2s linear forwards;
-    @keyframes disappear {
-        0% {
-            opacity: 1;
-        }
-        100% {
-            opacity: 0;
-        }
-    }
-    */
+            @keyframes disappear {
+                0% {
+                    opacity: 1;
+                }
+                100% {
+                    opacity: 0;
+                }
+            }
     &__spinner {
-        height: 100%;
         & .fas {
             position: sticky;
             left: 46%;

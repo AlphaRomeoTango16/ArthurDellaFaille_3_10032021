@@ -84,18 +84,28 @@
   margin-top: 30px; }
 
 body {
-  margin: unset; }
+  margin: unset;
+  width: 100%;
+  height: 100%; }
   @media (max-width: 1980px) and (min-width: 1024px) {
     body {
       background-color: black; } }
 
 #page {
+  position: relative;
+  height: 100%;
+  z-index: 2;
   margin-left: 10%;
-  margin-right: 10%; }
+  margin-right: 10%;
+  animation: appear 2s linear backwards; }
   @media (max-width: 1980px) and (min-width: 1024px) {
     #page {
       background-color: white; } }
-
+@keyframes appear {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 h1 {
   font-family: 'Roboto', arial;
   font-weight: bold; }
@@ -360,32 +370,24 @@ a {
           width: 130px; } }
 
 .loading {
-  display: block;
-  position: absolute;
-  z-index: 3;
   width: 100%;
-  height: 100%;
+  height: 178vh;
+  position: absolute;
+  z-index: 1;
   background: linear-gradient(to top left, #9356DC, #FF79DA);
-  /*
-  animation: disappear 2s linear forwards;
-  @keyframes disappear {
-      0% {
-          opacity: 1;
-      }
-      100% {
-          opacity: 0;
-      }
-  }
-  */ }
-  .loading__spinner {
-    height: 100%; }
-    .loading__spinner .fas {
-      position: sticky;
-      left: 46%;
-      top: 46%;
-      font-size: 7em;
-      color: white;
-      animation: spin 2s linear infinite; }
+  animation: disappear 2s linear forwards; }
+@keyframes disappear {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+  .loading__spinner .fas {
+    position: sticky;
+    left: 46%;
+    top: 46%;
+    font-size: 7em;
+    color: white;
+    animation: spin 2s linear infinite; }
 @keyframes spin {
   0% {
     opacity: 1;
