@@ -21,7 +21,7 @@ body {
         margin-left: 0%;
         margin-right: 0%;
     }
-    animation: appear 2s linear backwards;
+    animation: appear 3s linear 1s backwards;
             @keyframes appear {
                 0% {
                     opacity: 0;
