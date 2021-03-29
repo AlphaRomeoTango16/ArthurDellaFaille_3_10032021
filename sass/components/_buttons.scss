@@ -27,8 +27,8 @@
         height: 10px;
         padding: 10px;
         display: flex;
-        position: absolute;
-        left: 10px;
+        position: relative;
+        right: 17px;
         background-color: $primary-color;
         color: white;
         border-radius: 100px;
@@ -254,7 +254,7 @@
         & .fas {
             position: relative;
             top: 10px;
-            transition: transform 0.5s;
+            transition: transform 1s;
         }
     }
     &:hover {
