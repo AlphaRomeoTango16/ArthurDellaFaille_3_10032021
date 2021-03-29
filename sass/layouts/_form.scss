@@ -28,9 +28,6 @@
     }
     & h2 {
         font-weight: bold;
-        @include tablet {
-            margin-block-start: 10px;
-        }
     }
 }
 

@@ -4,7 +4,7 @@
     position: fixed;
     z-index: 1;
     background: linear-gradient(to top left, $primary-color, $secondary-color);
-    animation: disappear 3s linear 2s forwards;
+    animation: disappear 2s linear 1s forwards;
             @keyframes disappear {
                 0% {
                     opacity: 1;
