@@ -98,18 +98,16 @@
         font-family: Roboto;
         font-weight: bold;
         margin-top: 15px;
-        left: 235px;
+        right: 35px;
         @include desktop {
             padding: 5px 10px 5px 10px;
             font-size: 0.7em;
-            left: unset;
             right: 10px;
             margin-top: 10px;
         }
         @include tablet {
             padding: 5px 10px 5px 10px;
             font-size: 0.7em;
-            left: unset;
             right: 10px;
             margin-top: 10px;
         }
@@ -151,12 +149,14 @@
             cursor: pointer;
             &::before {
                 font-family: "Font Awesome 5 Free";
-                color: $primary-color;
+                background: -webkit-linear-gradient(top left, $primary-color, $secondary-color);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
                 font-weight: 900;
                 content: "\f004";
                 font-size: 1em;
                 position: absolute;
-                animation: apparition 2s ease-in-out;
+                animation: apparition 0.5s ease-in-out;
                     @keyframes apparition {
                         0% {
                             opacity: 0;

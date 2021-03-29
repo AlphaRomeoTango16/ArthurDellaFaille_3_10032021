@@ -203,7 +203,7 @@
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            transition: width ease-in-out 1s;
+            transition: width 0.5s;
         }
     }
     & p {
@@ -214,7 +214,7 @@
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        transition: width cubic-bezier(.20,.30,.40,.50) 1s;
+        transition: width cubic-bezier(.50,.60,.50,.30) 0.5s;
         @include tablet {
             width: 200px;
             font-size: 0.6em;
@@ -229,7 +229,7 @@
         padding-bottom: 10px;
         margin-left: auto;
         margin-right: 20px;
-        transition: transform 2s;
+        transition: transform 0.5s;
         @include desktop {
             right: -50px;
             margin-right: unset;
@@ -249,12 +249,12 @@
         color: white;
         justify-content: center;
         align-items: center;
-        transition: transform 2s;
+        transition: transform 1s;
         text-align: center;
         & .fas {
             position: relative;
             top: 10px;
-            transition: transform 3s;
+            transition: transform 0.5s;
         }
     }
     &:hover {
